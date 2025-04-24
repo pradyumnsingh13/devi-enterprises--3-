@@ -148,7 +148,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo-white.svg"
+              src="/logo.jpg"
               alt="Devi Enterprises Logo"
               width={180}
               height={50}

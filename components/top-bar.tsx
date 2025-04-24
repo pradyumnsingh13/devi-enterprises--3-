@@ -8,7 +8,7 @@ export default function TopBar() {
         <div className="flex flex-wrap items-center gap-4 md:gap-6">
           <div className="flex items-center">
             <span className="font-semibold mr-2">GST:</span>
-            <span>02AABCD1234A1Z5</span>
+            <span>02AZYPD8158R1ZF</span>
           </div>
           <Link
             href="mailto:devienterprisesbaddi@gmail.com"

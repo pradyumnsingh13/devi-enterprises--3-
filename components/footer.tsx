@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center mb-4">
               <Image
-                src="/images/logo-white.svg"
+                src="logo.jpg"
                 alt="Devi Enterprises Logo"
                 width={180}
                 height={50}
@@ -153,7 +153,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-indigo-800 pt-6 mt-6 text-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Devi Enterprises. All rights reserved. | GST: 02AABCD1234A1Z5</p>
+          <p>&copy; {new Date().getFullYear()} Devi Enterprises. All rights reserved. | GST: 02AZYPD8158R1ZF</p>
         </div>
       </div>
     </footer>
