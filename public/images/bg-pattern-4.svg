@@ -1,0 +1,14 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="squares" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#1E40AF" opacity="0.1"/>
+      <rect x="20" y="20" width="20" height="20" fill="#1E40AF" opacity="0.1"/>
+    </pattern>
+    <pattern id="lines" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 0 0 L 40 40" stroke="#1E40AF" stroke-width="1" opacity="0.2"/>
+      <path d="M 40 0 L 0 40" stroke="#1E40AF" stroke-width="1" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#squares)"/>
+  <rect width="100%" height="100%" fill="url(#lines)"/>
+</svg>

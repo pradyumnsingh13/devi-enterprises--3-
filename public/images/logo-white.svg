@@ -1,0 +1,5 @@
+<svg width="180" height="50" viewBox="0 0 180 50" xmlns="http://www.w3.org/2000/svg">
+  <rect x="5" y="10" width="40" height="30" rx="5" fill="white"/>
+  <text x="25" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#1E40AF" text-anchor="middle">DE</text>
+  <text x="60" y="30" font-family="Arial" font-size="18" font-weight="bold" fill="white">DEVI ENTERPRISES</text>
+</svg>

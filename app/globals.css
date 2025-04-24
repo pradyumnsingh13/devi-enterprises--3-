@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 30, 27, 75; /* Dark purple background */
+  --background-end-rgb: 49, 46, 129; /* Indigo background */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
+}
+
+/* Reduce the gap between sections by modifying the section padding */
+.section-bg {
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 0; /* Reduced padding between sections */
+}
+
+/* Enhance section backgrounds with gradients instead of patterns */
+.home-bg {
+  background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%);
+}
+
+.about-bg {
+  background: linear-gradient(135deg, #312e81 0%, #4338ca 100%);
+}
+
+.pharma-bg {
+  background: linear-gradient(135deg, #5b21b6 0%, #7c3aed 100%);
+}
+
+.steel-bg {
+  background: linear-gradient(135deg, #312e81 0%, #4338ca 100%);
+}
+
+.handling-bg {
+  background: linear-gradient(135deg, #5b21b6 0%, #7c3aed 100%);
+}
+
+.facilities-bg {
+  background: linear-gradient(135deg, #312e81 0%, #4338ca 100%);
+}
+
+.clients-bg {
+  background: linear-gradient(135deg, #5b21b6 0%, #7c3aed 100%);
+}
+
+.contact-bg {
+  background: linear-gradient(135deg, #312e81 0%, #4338ca 100%);
+}
+
+/* Remove the pattern backgrounds */
+.section-bg::before {
+  display: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(-10px) translateX(10px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(3deg);
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.05;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}
+
+.product-slider {
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.product-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.product-slide {
+  scroll-snap-align: start;
+}
+
+/* Update dot indicators */
+.dot-indicator {
+  transition: all 0.3s ease;
+}
+
+.dot-indicator.active {
+  width: 2rem;
+  background-color: #fbbf24;
+}
+
+.dot-indicator:not(.active) {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@layer components {
+  /* Update section title styling */
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-8 relative text-yellow-300;
+  }
+
+  .section-title::after {
+    content: "";
+    @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-yellow-400 mt-2;
+  }
+
+  /* Enhance product cards with better styling */
+  .product-card {
+    @apply bg-indigo-900 text-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl border border-purple-500;
+  }
+
+  /* Update button styles to match new theme */
+  .btn-primary {
+    @apply bg-yellow-500 hover:bg-yellow-600 text-indigo-900 font-semibold py-2 px-4 rounded transition-colors duration-300 shadow-md;
+  }
+
+  .btn-outline {
+    @apply border border-yellow-500 text-yellow-400 hover:bg-yellow-500 hover:text-indigo-900 font-semibold py-2 px-4 rounded transition-colors duration-300;
+  }
+}
+
+/* Make product images larger */
+.product-slide .product-card {
+  @apply h-full;
+}
+
+.product-slide .product-card > div:first-child {
+  @apply h-80; /* Increase image height */
+}

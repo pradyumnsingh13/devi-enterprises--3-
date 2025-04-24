@@ -1,0 +1,12 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="diamonds" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M30,5 L55,30 L30,55 L5,30 Z" fill="none" stroke="#1E40AF" stroke-width="1" opacity="0.2"/>
+    </pattern>
+    <pattern id="cross" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M20,0 L20,40 M0,20 L40,20" stroke="#1E40AF" stroke-width="1" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#diamonds)"/>
+  <rect width="100%" height="100%" fill="url(#cross)"/>
+</svg>
